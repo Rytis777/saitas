@@ -1,0 +1,156 @@
+/* Bendras kūno stilius */
+body {
+    background-color: #101010; /* Tamsesnis fonas */
+    color: #eaeaea; /* Šviesi teksto spalva */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Antraštės stilius */
+h1, h2, h3 {
+    color: #2ecc71; /* Akcento spalva (žalia) */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Nuorodų stilius */
+a {
+    color: #2ecc71;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #27ae60; /* Tamsesnė žalia nuorodoms užvedus */
+}
+
+/* Meniu navigacija */
+nav {
+    background: #181818;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #2ecc71;
+    color: #101010;
+}
+
+/* Apie mane sekcija */
+#about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: #151515;
+    border: 1px solid #2ecc71;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+#about img {
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+#about .info {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+#about .info h2 {
+    color: #eaeaea;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#about .info p {
+    color: #bbb;
+    margin-bottom: 15px;
+}
+
+/* Kontaktinė informacija */
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-list li i {
+    color: #2ecc71;
+    margin-right: 10px;
+}
+
+/* Pėdutės stilius */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #181818;
+    color: #bbb;
+    font-size: 0.9rem;
+    margin-top: 50px;
+    border-top: 1px solid #2ecc71;
+}
+
+footer a {
+    color: #2ecc71;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #27ae60;
+}
+
+:root {
+    --bg-color: #ffffff; /* Šviesus fonas */
+    --text-color: #000000; /* Šviesus tekstas */
+    --accent-color: #2ecc71;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* Tamsus režimas */
+body.dark-mode {
+    --bg-color: #101010; /* Tamsus fonas */
+    --text-color: #eaeaea; /* Tamsus tekstas */
+}
+

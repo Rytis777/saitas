@@ -1,0 +1,23 @@
+// Pasirinkite mygtuką
+const themeToggle = document.getElementById('theme-toggle');
+
+// Įvykio klausytojas mygtukui
+themeToggle.addEventListener('click', () => {
+    // Pridėkite arba pašalinkite "dark-mode" klasę iš <body>
+    document.body.classList.toggle('dark-mode');
+
+    // Išsaugokite vartotojo pasirinkimą į "localStorage"
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+// Patikrinkite vartotojo pasirinkimą ir pritaikykite temą
+window.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.classList.add('dark-mode');
+    }
+});
